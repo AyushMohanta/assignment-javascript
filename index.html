@@ -1,0 +1,234 @@
+<html>
+    <head>
+        <title>Main Page</title>
+        <style>
+            .header img 
+            {
+                float: left;
+                width: 180px;
+                height: 120px;
+                padding: 20px 10px 20px 100px;
+            }
+            .header h1, h3
+            {
+                position: relative;
+                top: 45px;
+                left: 40px;
+                color: white;
+            }
+            .contacts
+            {
+                float: right;
+                position: absolute;
+                top: 25px;
+                right: 30px;
+                color: white; 
+            }
+            
+            body
+            {
+                background-color: rgb(56, 57, 58);
+            }
+            
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding-left: 30%;
+                overflow: hidden;
+                background-color: #333;
+            }
+
+            li 
+            {
+                float: left;
+            }
+
+            li a, .dropbtn 
+            {
+                display: inline-block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            li a:hover, .dropdown:hover .dropbtn 
+            {
+                 background-color: red;
+            }
+
+            li.dropdown 
+            {
+                display: inline-block;
+            }
+
+            .dropdown-content 
+            {
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                 z-index: 1;
+            }       
+
+            .dropdown-content a 
+            {
+                 color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                 display: block;
+                 text-align: left;
+            }
+
+            .dropdown-content a:hover 
+            {
+                background-color: #f1f1f1;
+            }
+
+            .dropdown:hover .dropdown-content 
+            {
+
+                display: block;
+            }
+
+            .column {
+                float: left;
+                width: 25%;
+                padding: 10px;
+            }
+
+            .column img {
+                opacity: 0.8; 
+                cursor: pointer; 
+            }
+
+            .column img:hover {
+                opacity: 1;
+            }
+
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            .container {
+                position: relative;
+                display: none;
+            }
+
+            #imgtext {
+                position: absolute;
+                bottom: 15px;
+                left: 15px;
+                color: rgb(255, 255, 255);
+                font-size: 50px;
+            }
+
+            .closebtn 
+            {
+                position: absolute;
+                top: 10px;
+                right: 15px;
+                color: white;
+                font-size: 35px;
+  
+    }      
+        </style>
+    </head>
+    <body>
+        <div class="header" style="background-color: black; padding-bottom: 100px;">
+            <img src="logo 2.png" alt="logo" />
+            <h1>Indian Institute of Information Technology, Kota</h1>
+            <h3>(An Institute of National Importance)</h3>
+        </div>
+
+        <div class="contacts">
+        <a href="https://www.instagram.com/iiitkotaofficial"><img src="ins.png" height="40px" width="55px"></a><a href="https://www.facebook.com"><img src="fac.png" height="40px" width="40px"></a>
+        <pre>Ph no: 0141 - 271 5071</pre>
+        </div>
+        
+        <ul>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Home</a>
+                <div class="dropdown-content">
+                  <a href="http://www.iiitkota.ac.in/aboutus">About Institute</a>
+                  <a href="http://www.iiitkota.ac.in/mission">Mission and Vision</a>
+                  <a href="http://www.iiitkota.ac.in/governingbody">Governing Body</a>
+                  <a href="http://www.iiitkota.ac.in/executivecouncil">Executing Council</a>
+                  <a href="http://www.iiitkota.ac.in/PDF/Act/IIIT-Act.pdf">IIIT PPP Act</a>
+                </div>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Admission</a>
+                <div class="dropdown-content">
+                    <a href="http://www.iiitkota.ac.in/btech">B.Tech</a>
+                    <a href="http://www.iiitkota.ac.in/fee">Fees</a>
+                    <a href="http://www.iiitkota.ac.in/Scholarship">Scholarship</a>
+                </div>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Academics</a>
+                <div class="dropdown-content">
+                    <a href="http://www.iiitkota.ac.in/courses">Courses</a>
+                    <a href="Departments">Department</a>
+                    <a href="http://www.iiitkota.ac.in/curriculumPortal">Curriculum</a>
+                    <a href="http://www.iiitkota.ac.in/timetable">Time Table</a>
+                    <a href="http://www.iiitkota.ac.in/formula">Conversion Formula</a>
+                </div>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Facilities</a>
+                    <div class="dropdown-content">
+                      <a href="http://www.iiitkota.ac.in/campus">Overall Campus</a>
+                      <a href="http://www.iiitkota.ac.in/library">Library</a>
+                      <a href="http://www.iiitkota.ac.in/infrastructure">IT Infrastructure</a>
+                      <a href="http://www.iiitkota.ac.in/computerlab">Computer Labs</a>
+                      <a href="http://www.iiitkota.ac.in/canteen">Canteen</a>
+                      <a href="http://www.iiitkota.ac.in/medical">Medical</a>
+                    </div>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Placements</a>
+                      <div class="dropdown-content">
+                      <a href="http://www.iiitkota.ac.in/placementprocedure">Placement Procedure</a>
+                      <a href="http://www.iiitkota.ac.in/placementstats">Placement Statistics</a>
+                      <a href="http://www.iiitkota.ac.in/internshipstats">Internship</a>
+                      <a href="http://www.iiitkota.ac.in/ourecruiters">Our Recruiters</a>
+                  </div>
+        </ul>
+
+
+        <div style="text-align:center">
+            <h2 style="color: white;">Our Gallery</h2>
+            <p style="color: white;">(Click to expand)</p>
+        </div>
+          
+          
+          <div class="row">
+            <div class="column">
+              <img src="4.jpeg" alt="Prabha Bhawan" style="width:70%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+              <img src="children.jpeg" alt="Yoga" style="width:70%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+              <img src="2.jpeg" alt="VLTC" style="width:70%" onclick="myFunction(this);">
+            </div>
+            
+          </div>
+          
+          <div class="container">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+            <img id="expandedImg" style="width:100%">
+            <div id="imgtext"></div>
+          </div>
+          
+          <script>
+          function myFunction(imgs) {
+            var expandImg = document.getElementById("expandedImg");
+            var imgText = document.getElementById("imgtext");
+            expandImg.src = imgs.src;
+            imgText.innerHTML = imgs.alt;
+            expandImg.parentElement.style.display = "block";
+          }
+          </script>
+    </body>
+</html>
